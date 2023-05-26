@@ -1,0 +1,34 @@
+/* .form-container{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-wrapper{
+    border: solid 1px black;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input{
+    padding: 3px 4px;
+    border: solid 1px black;
+    box-shadow: 50px 50px 200px rgba(39,180,240,1),
+               -50px -50px 200px #ffffff;
+    border-radius: 0.3rem;
+}
+
+input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    border: solid 2px #9ecaed;
+    box-shadow: 10px 10px 100px #9ecaed;
+}
+
+
+ */

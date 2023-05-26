@@ -1,0 +1,87 @@
+.user-container{
+    height: 80%;
+    width: 330px;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    background-color: whitesmoke;
+    box-shadow: 2.5px 2.5px 20px #a45656,
+               -2.5px -2.5px 20px #ffffff;
+    cursor: pointer;
+}
+
+.user-container:hover{
+    height: 83%;
+    width: 340px;
+    border-radius: 0.5rem;
+    background-color: rgb(220, 221, 221);
+    box-shadow: 6px 6px 35px #464e69,
+               -6px -6px 35px #ffffff;
+    
+    transition: all 0.15s ease-out;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.username{
+    margin-bottom: 5px;
+}
+
+.email{
+    margin-bottom: 15px;
+}
+
+.crud-btn{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.edit-btn{
+    padding: 2px 5px;
+    border-radius: 0.2rem;
+    border: none;
+    background-color: rgb(1, 171, 1);
+    color: white;
+}
+
+.edit-btn:hover{
+    background-color: rgb(2, 206, 2);
+    cursor: pointer;
+}
+
+.del-btn{
+    padding: 2px 5px;
+    border-radius: 0.2rem;
+    border: none;
+    background-color: rgb(225, 4, 4);
+    color: white;
+}
+
+.del-btn:hover{
+    background-color: rgb(252, 3, 3);
+    cursor: pointer;
+}
+
+.update-btn{
+    padding: 2px 5px;
+    border-radius: 0.2rem;
+    border: solid 0.5px black;
+    background-color: white;
+
+    color: black;
+}
+
+.update-btn:hover{
+    background-color: rgb(29, 104, 255);
+    cursor: pointer;
+    color: white;
+}

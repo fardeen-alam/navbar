@@ -1,0 +1,40 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "Fardeen",
+      "username": "cr1nge",
+      "email": "alamf",
+      "address": {
+        "zipcode": "119191"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "zipcode": "33263"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "email": "Karley_Dach@jasper.info",
+      "address": {
+        "zipcode": "23505-1337"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "address": {
+        "zipcode": "58804-1099"
+      }
+    }
+  ]
+}

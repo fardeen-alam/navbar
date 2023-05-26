@@ -1,38 +1,329 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    height: 100vh;
+    width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon{
+  z-index: 2;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon--open{
+  z-index: 2;
+  position: relative;
+  transition: all 1ms ease;
+}
+
+.wrapper1 {
+    width: 100%;
+    height: 15%;
+}
+
+.wrapper2 {
+    height: 75%;
+    width: 100%;
+}
+
+/* .wrapper3 {
+    height: 10%;
+    width: 100%;
+} */
+
+.header {
+    height: 15%;
+    display: flex;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.heading{
+  font-size: xx-large;
+  position: absolute;
+  margin-left: 2.5rem;
+}
+
+.wrapper {
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.footer-container{
+  height: 5%;
+  width: 100%;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+}
+
+.body-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+} */
+
+.radio{
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-heading{
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: .5rem;
+  font-size: large;
+  width: 330px;
+  padding-left: 1rem;
+}
+
+.radio-btn{
+  display: flex;
+  padding-left: .5rem;
+  gap: 2.5rem;
+}
+
+.m-radio{
+  display: flex;
+}
+
+.u-radio{
+  display: flex;
+}
+
+.ck{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: .5rem;
+}
+
+.a-ck{
+  display: flex;
+}
+
+.f-ck{
+  display: flex;
+}
+
+.m-ck{
+  display: flex;
+}
+
+.output{
+  display: flex;
+  padding-left: .5rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px black;
+}
+
+.ans{
+  color: rgb(255, 136, 0);
+}
+
+.radio-heading{
+  margin-bottom: .3rem;
+}
+
+.output-ck{
+  display: flex;
+  padding-left: .5rem;
+  border-bottom: solid 1px black;
+}
+
+.sidebar{
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30vw;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+  z-index: 1;
+  /* animation: appear 1s linear; */
+}
+
+.sidebar a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar li{
+  list-style: none;
+  padding: 2rem 2rem;
+  border-bottom: solid gray 1px;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebar li:hover{
+  background-color: gray;
+  transition: background-color 1s ease-out;
+}
+
+.sidebar--open{
+  transform: translateX(0%);
+  z-index: 2;
+  /* animation: disappear 2s linear; */
+}
+
+@keyframes appear{
+  0%{
+    transform: translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0%);
   }
 }
+
+@keyframes disappear{
+  100%{
+    transform: translateX(0%);
+  }
+  50%{
+    transform: translateX(-50%);
+  }
+  0%{
+    transform: translateX(-100%);
+  }
+}
+
+.backdrop{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  display: none;
+  z-index: 1;
+}
+
+.backdrop--open{
+  display: block;
+}
+
+.btn{
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.sidebar-animate{
+
+}
+
+/* .toolbar{
+  display: flex;
+  background-color: black;
+  color: white;
+  display: flex;
+  gap: 2.5rem;
+  padding: 1.5rem;
+  align-items: center;
+  height: 10%;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+}
+
+.toolbar--open{
+  height: 25px
+}
+
+.header{
+  font-size: 2rem;
+}
+
+.logo{
+  align-self: flex-end;
+}
+
+.side-icon{
+  background-color: white;
+}
+
+.icon{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.heading{
+  display: flex;
+  height: 100%;
+}
+
+img{
+  height: 100%;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  z-index: -1;
+}
+
+.footer-container:hover{
+  height: 60px;
+}
+
+.footer{
+  margin-left: 1.5rem;
+  margin-bottom: 2px;
+}
+
+.contact-details{
+  margin-left: 1.5rem;
+  transform: translateY(100%);
+}
+
+.contact-details--open{
+  transform: translateY(0%);
+} */
